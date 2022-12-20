@@ -777,7 +777,7 @@ server {
     }
 
     location /api {
-        proxy_pass http://[::1]:8081;
+        proxy_pass http://::1:8081;
     }
 
     #error_page  404              /404.html;
