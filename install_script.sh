@@ -808,7 +808,7 @@ server {
     }
 
     location /api {
-        proxy_pass http://[::1]:8081;
+        proxy_pass http://::1:8081;
     }
 
     error_page  497              http://\$host:${trojan_panel_ui_port}\$uri?\$args;
